@@ -18,15 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/logo2" />
-    </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -37,4 +31,202 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aldi"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/fareel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+
+        app:cardBackgroundColor="@color/navy_blue" >
+
+        <TextView
+            android:id="@+id/namaAldi"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nama      : Aldi Pamungkas"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300px"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/aldi" />
+
+        <TextView
+            android:id="@+id/absenAldi"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abesen   : 3"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/roleAldi"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role         : Designer"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fareel"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/nopal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/navy_blue" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="300px"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/farel" />
+
+        <TextView
+            android:id="@+id/namaFarel"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Nama      : Muhmmad AlFarrel .G"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/absenFarel"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absen     : 23"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/roleFarel"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content"
+            android:text="Role         : Designer"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nopal"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/appbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10px"
+        app:cardBackgroundColor="@color/navy_blue" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="300px"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nopal" />
+
+        <TextView
+            android:id="@+id/namaNopal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Nama      : Naufal Danadyaksa"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/absenNopal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absen     : 25"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/roleNopal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content"
+            android:text="Role        : Developer"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/catur"
+        android:layout_marginBottom="10px"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@color/navy_blue"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/aldi"
+        android:layout_marginTop="10dp"
+
+        >
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/catur"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/namaCatur"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Nama      : Catur Strom"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/absenCatur"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absen     : 11"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/roleCatur"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content"
+            android:text="Role        : Designer"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>
