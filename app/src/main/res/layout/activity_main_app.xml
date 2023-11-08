@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,16 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/logo2" />
-    </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Home"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -40,6 +31,64 @@
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:paddingTop="10dp"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/appbar"
+        app:srcCompat="@drawable/banner" />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Lari"
+        android:backgroundTint="@color/navy_blue"
+        android:layout_below="@id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lari"
+        android:onClick="lari"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Renang"
+        android:layout_toRightOf="@id/Lari"
+        android:backgroundTint="@color/navy_blue"
+        android:layout_below="@id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renang"
+        android:onClick="renang"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Sepeda"
+        android:backgroundTint="@color/navy_blue"
+        android:layout_below="@id/Lari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sepeda"
+        android:onClick="sepeda"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/gym"
+        android:backgroundTint="@color/navy_blue"
+        android:layout_below="@id/Renang"
+        android:layout_toRightOf="@id/Sepeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym"
+        android:onClick="gym"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/banner"
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips And Trick :"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
 
 
 </RelativeLayout>
